@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Hari Ibu</title>
+
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body style with gradient background and full screen */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(45deg, #FF7F50, #FFD700, #FF6347, #FF1493, #5544eb);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Keyframes for background gradient animation */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Container for content with a beautiful blur effect */
+        .container {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 30px;
+            padding: 40px 60px;
+            max-width: 850px;
+            width: 150%;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 80px rgba(255, 0, 255, 0.7);
+        }
+
+        /* Heading style with animated fade-in effect */
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            color: #3d0b0b;
+            text-shadow: 2px 2px 10px rgba(255, 105, 180, 0.8);
+            animation: fadeIn 3s ease-out;
+        }
+
+        /* Fade-in effect for the heading */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Subheading style with colorful text */
+        .subheading {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #FF4081;
+            margin-bottom: 20px;
+            animation: fadeIn 3s ease-out;
+        }
+
+        /* Image style with hover zoom effect */
+        .image {
+            margin: 10px 0;
+            animation: slideUp 3s ease-out;
+        }
+
+        /* Slide-up animation for images */
+        @keyframes slideUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .image img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 20px;
+            box-shadow: 0 0 150px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        }
+
+        /* Poetic text style */
+        .puisi {
+            font-style: italic;
+            font-size: 1.3rem;
+            margin-top: 20px;
+            line-height: 1.0;
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto;
+            animation: fadeIn 3s ease-out;
+        }
+
+        /* Footer style with animation */
+        .footer {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #FFFFFF;
+            padding: 10px;
+            font-weight: bold;
+            animation: fadeInFromBottom 3s ease-out;
+        }
+
+        /* Animation for footer appearing from the bottom */
+        @keyframes fadeInFromBottom {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .subheading {
+                font-size: 1.5rem;
+            }
+            .image img {
+                max-width: 50%;
+            }
+            .puisi {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .subheading {
+                font-size: 1.3rem;
+            }
+            .puisi {
+                font-size: 1rem;
+            }
+        }
+
+        /* Button style */
+        .click-button {
+            background-color: #FF1493;
+            color: rgb(12, 2, 2);
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .click-button:hover {
+            background-color: #FF6347;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Selamat Hari Ibu!</h1>
+        <p class="subheading">Untuk Mama yang paling hebat!</p>
+
+        <div class="image">
+            <!-- Gantilah URL gambar ini dengan gambar yang sesuai -->
+            <img src="c:\Users\ruang\OneDrive\Pictures\Gambar WhatsApp 2024-12-22 pukul 21.41.43_c59d4d54.jpg" alt="Selamat Hari Ibu">
+        </div>
+
+        <p class="puisi">
+            Selamat Hari Ibu! I Love You Forever and Ever.<br><br>
+            Mama adalah wanita tercantik di dunia.
+        </p>
+
+        <button class="click-button" onclick="showMessage()">Klik untuk Pesan Spesial!</button>
+
+        <p id="message" style="font-size: 1.5rem; margin-top: 20px; color: #FFF; display: none;">Terima kasih sudah mengingat Hari Ibu! Semoga hari Mama penuh kebahagiaan!</p>
+
+        <div class="footer">
+            <p>&copy; Semoga hari MAMA penuh kebahagiaan!</p>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            var message = document.getElementById("message");
+            message.style.display = "block"; // Menampilkan pesan setelah tombol diklik
+        }
+    </script>
+
+</body>
+</html>
